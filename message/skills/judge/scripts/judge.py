@@ -578,6 +578,10 @@ def score_message(client, message: dict, card: dict, audience: str, kind: str, c
         reason = applicable(rule, words, medium, kind)
         if reason is None and rule["level"] == "card" and not card:
             reason = "no card was written for this message"
+        if reason is None and rule["level"] == "card":
+            missing = [f for f in rule.get("requires_card", []) if not (card.get(f) or "").strip()]
+            if missing:
+                reason = f"the card has no {', '.join(missing)}, so this rule does not apply"
         if reason is None and rule["level"] not in by_level:
             reason = f"unsupported level {rule['level']!r}"
         if reason:

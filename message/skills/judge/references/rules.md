@@ -32,6 +32,7 @@ Every fenced `json` block is either the axis table (one block, `"axes"` key) or 
 | `scope` | Span rules only, optional. `opening` sends only the first three sentences. `closing` sends only the last three. |
 | `min_words` | Skip the rule and mark it not applicable when the message is shorter. |
 | `media` | Skip the rule unless the inferred medium is in this list. |
+| `requires_card` | Card rules only, optional. A list of card fields. The rule is marked not applicable when any of them is empty, so a fault that another axis already reports at its source is not charged twice. |
 | `scores` | Choice rules only. Maps each option to a 0 to 1 score. |
 | `question` | The Jev question: `instructions` plus `criteria`. Sent verbatim. |
 
@@ -789,17 +790,22 @@ Code prefilters with a lexicon of frame words the right owns. Jev decides whethe
   "id": "no-elephant.share-on-opposition",
   "axis": "no-elephant",
   "level": "message",
-  "type": "score",
-  "bad": true,
+  "type": "choice",
   "weight": 1,
+  "scores": {
+    "none": 1.0,
+    "brief": 0.8,
+    "substantial": 0.3,
+    "dominant": 0.0
+  },
   "question": {
     "instructions": "How much of `message` restates what opponents claim or argue, in the opponents' own terms? Only restated claims, arguments, and coined phrases belong in this judgment. Naming who is causing a harm, or reporting what they are doing, is the message's own argument and is not a restatement.",
-    "criteria": [
-      "None: no claim or argument of the opposition is ever restated, though the message may still name who is causing the harm",
-      "Brief: one passing restatement of an opposing claim, and the message returns at once to its own argument",
-      "Substantial: a section of the message is given over to answering an opposing claim",
-      "Dominant: the message is organized around the opposition's claims and spends most of its words answering them"
-    ]
+    "criteria": {
+      "none": "No claim or argument of the opposition is ever restated, though the message may still name who is causing the harm.",
+      "brief": "One passing restatement of an opposing claim, and the message returns at once to its own argument.",
+      "substantial": "A section of the message is given over to answering an opposing claim.",
+      "dominant": "The message is organized around the opposition's claims and spends most of its words answering them."
+    }
   }
 }
 ```
@@ -1958,7 +1964,7 @@ Replace: "Our comprehensive approach addresses the root causes of inequity acros
 
 ### 14.3 The summary carries the villain
 
-A message with no villain at all fails this rule, and axis 3 reports the same fault at its source.
+A message with no villain at all is reported by axis 3 at its source, so this rule is marked not applicable when the card's `villain` field is empty. It measures only whether a villain the message does name survives retelling.
 
 ```json
 {
@@ -1967,6 +1973,7 @@ A message with no villain at all fails this rule, and axis 3 reports the same fa
   "level": "card",
   "type": "noul",
   "weight": 1,
+  "requires_card": ["villain"],
   "question": {
     "instructions": "Does `card.summary`, which is what a reader would say if asked to retell `message` in one sentence, still name who or what is causing the problem?",
     "criteria": {
@@ -2180,4 +2187,4 @@ Policy merit. The judge takes the position in the message as given and scores th
 
 Anything that is not words. Images, video, layout, typography, the photograph at the top of the page, the voice in the ad, and the design of the sign-up form all change how a message lands, and none of them reach Jev.
 
-Anything that needs counting inside the model. Jev judges, it does not count. Word counts, sentence counts, how many times a phrase appears, how long the message is, and the share of it spent on one subject are all computed in code before the questions go out, or not at all. When a rule seems to ask for a number, read it again: it asks Jev for a judgment and the script does the arithmetic.
+Anything that needs an exact count inside the model. Jev judges, it does not count. Word counts, sentence counts, how many times a phrase appears, and how long the message is are all computed in code before the questions go out, or not at all. Where a rule needs a rough quantity, such as how many things the message asks for or how much of it answers the opposition, it asks Jev to place the message in one of a few named buckets (none, one, a few, many), which is a judgment about shape, not arithmetic.
