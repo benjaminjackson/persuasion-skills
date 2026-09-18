@@ -49,7 +49,7 @@ When you judge a series of messages instead of one, the judge also checks consis
 The rulebook is drawn from:
 
 - [Messaging This Moment](https://www.communitychange.org/wp-content/uploads/C3-Messaging-This-Moment-Handbook.pdf), a handbook from the Center for Community Change (C3)
-- Kennedy, Fisher, and Bailey, "Framing in Race-Conscious, Antipoverty Advocacy," *Clearinghouse Review* 2010 (the Berkeley framing paper)
+- Kennedy, Fisher, and Bailey, ["Framing in Race-Conscious, Antipoverty Advocacy,"](https://www.law.berkeley.edu/archive/files/thcsj/Framing_in_RaceConsciousAntipoverty_Advocacy.pdf) *Clearinghouse Review* 2010 (the Berkeley framing paper)
 - Warpehoski, ["7 Principles of Community Organizing"](https://www.icpj.org/blog/wp-content/uploads/2016/07/7-Principles-of-Community-Organizing.pdf), Interfaith Council for Peace and Justice (ICPJ)
 - [Framing Equality Toolkit](https://publicinterest.org.uk/FramingEqualityToolkit.pdf), ILGA-Europe and PIRC, 2017
 - [*How to Test Your Communications*](https://www.ilga-europe.org/sites/default/files/testingguide.pdf), PIRC and ILGA-Europe
