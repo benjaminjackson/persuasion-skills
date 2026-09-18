@@ -1,0 +1,41 @@
+{
+  "m1": {
+    "abt": {
+      "and": "every family in this town wants a home they can count on at a price they can afford",
+      "but": "a small group of corporate landlords bought up half the rental housing on the east side and raised rent on every unit while reporting record profits",
+      "therefore": "sign the petition to bring a rent stabilization measure to the city council"
+    },
+    "core_value": "every family deserves a home they can count on",
+    "villain": "a small group of corporate landlords who bought up east side rentals and raised the rent",
+    "hero": "the East Side Tenants Council and the neighbors signing together",
+    "ask": "sign the petition",
+    "summary": "A handful of corporate landlords are pricing east side families out of their homes, so sign the petition to get rent stabilization on the city council's agenda.",
+    "medium": "email"
+  },
+  "m2": {
+    "abt": {
+      "and": "more than 800 neighbors already signed the petition",
+      "but": "the same corporate landlords are telling the city council that nobody actually cares",
+      "therefore": "share the petition with three neighbors so the council hears from more than just the signers"
+    },
+    "core_value": "every family deserves a home they can count on",
+    "villain": "the same corporate landlords, now downplaying the petition to the city council",
+    "hero": "the 800-plus neighbors who already signed",
+    "ask": "share the petition with three neighbors",
+    "summary": "The landlords are telling the council nobody cares, so share the petition to prove them wrong.",
+    "medium": "email"
+  },
+  "m3": {
+    "abt": {
+      "and": "signing and sharing got rent stabilization onto Thursday's city council agenda",
+      "but": "the landlords will bring lawyers to the hearing and the council needs to see the neighbors this measure protects",
+      "therefore": "show up Thursday at 6pm at City Hall"
+    },
+    "core_value": "every family deserves a home they can count on",
+    "villain": "the corporate landlords, now sending lawyers to the hearing",
+    "hero": "the neighbors who signed and shared, now asked to show up in person",
+    "ask": "show up Thursday at 6pm at City Hall",
+    "summary": "Because neighbors signed and shared, rent stabilization made the agenda, and now the council needs to see a full room on Thursday.",
+    "medium": "email"
+  }
+}

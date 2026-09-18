@@ -1,0 +1,5 @@
+Contrary to what supporters of the proposed FY18 budget resolution claim, the reconciliation instructions embedded in this package are not fiscally neutral. Baseline CBO scoring projects a $1.5 trillion reduction in mandatory spending over the ten-year window, with roughly 62% of that reduction concentrated in Medicaid and SNAP line items under the current continuing resolution. Per-capita caps and block-grant conversions would reduce federal match rates in 38 states, and the reconciliation instructions leave appropriators little room to backfill the gap through discretionary offsets.
+
+The distributional analysis is stark: the top marginal rate reduction alone accounts for a larger static revenue loss than the entire discretionary non-defense budget. Dynamic scoring assumptions used to justify the pay-for do not hold up against historical elasticity estimates from prior reconciliation cycles.
+
+If you have a moment, you might consider reaching out to your representative's office at some point to share your thoughts on this appropriations cycle.

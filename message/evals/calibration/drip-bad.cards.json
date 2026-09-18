@@ -1,0 +1,41 @@
+{
+  "m1": {
+    "abt": {
+      "and": "rents are up again this quarter across the city",
+      "but": "housing is a complicated issue with many moving parts, from zoning to interest rates to construction costs",
+      "therefore": "consider getting involved if you get a chance"
+    },
+    "core_value": "fairness in the housing market",
+    "villain": "none named",
+    "hero": "none named",
+    "ask": "consider getting involved, if you get a chance",
+    "summary": "Rents are up and housing is complicated, so get involved if you get a chance.",
+    "medium": "email"
+  },
+  "m2": {
+    "abt": {
+      "and": "home prices continue to be a challenge for many residents",
+      "but": "many factors are at play, including national trends that are hard to influence locally",
+      "therefore": "consider getting involved if you get a chance"
+    },
+    "core_value": "opportunity for all",
+    "villain": "none named",
+    "hero": "none named",
+    "ask": "consider getting involved, if you get a chance",
+    "summary": "Home prices remain a challenge for a lot of reasons, so get involved if you get a chance.",
+    "medium": "email"
+  },
+  "m3": {
+    "abt": {
+      "and": "the housing situation remains difficult for a lot of people in the community",
+      "but": "it is a tough environment right now for a lot of reasons",
+      "therefore": "consider getting involved if you get a chance"
+    },
+    "core_value": "freedom and real choices about where to live",
+    "villain": "none named",
+    "hero": "none named",
+    "ask": "consider getting involved, if you get a chance",
+    "summary": "Housing remains difficult for a lot of reasons, so get involved if you get a chance.",
+    "medium": "email"
+  }
+}

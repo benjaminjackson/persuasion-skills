@@ -1,0 +1,9 @@
+{
+  "name": "message",
+  "version": "0.1.0",
+  "description": "Scores persuasive political messages against a fourteen-axis rulebook, using TypeSafe's Jev system to judge each rule and each message as a whole, and produces concrete suggested rewrites for the weakest spots. The judge skill, invoked as /message:judge, takes a message, a file of messages, or a whole site, and works through a fetch, card-writing, scoring, and suggestion-verification pipeline.",
+  "author": {
+    "name": "Benjamin Jackson",
+    "email": "ben@benjaminjackson.co"
+  }
+}

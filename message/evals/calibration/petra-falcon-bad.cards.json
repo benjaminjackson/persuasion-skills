@@ -1,0 +1,15 @@
+{
+  "m1": {
+    "abt": {
+      "and": "supporters claim the FY18 budget resolution is fiscally neutral",
+      "but": "CBO scoring and per-capita caps show a large reduction in Medicaid and SNAP spending across many states",
+      "therefore": "readers might consider reaching out to their representative's office at some point"
+    },
+    "core_value": "not stated; the piece argues from budget figures rather than from a value",
+    "villain": "not named as a person; framed as a budget resolution and its reconciliation instructions",
+    "hero": "none named",
+    "ask": "reach out to your representative's office at some point, mentioned once at the very end and hedged",
+    "summary": "A budget resolution's reconciliation instructions would cut Medicaid and SNAP by a large percentage over ten years.",
+    "medium": "op-ed or speech"
+  }
+}

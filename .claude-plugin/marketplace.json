@@ -1,0 +1,18 @@
+{
+  "name": "persuasion-skills",
+  "owner": {
+    "name": "Benjamin Jackson",
+    "email": "ben@benjaminjackson.co"
+  },
+  "metadata": {
+    "description": "A judge for persuasive political messages, built for a progressive messenger: it scores a message or a series of messages against a rulebook drawn from movement messaging research, and turns each finding into a concrete rewrite suggestion",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "message",
+      "description": "Scores persuasive political messages against a fourteen-axis rulebook, using TypeSafe's Jev system to judge each rule and each message as a whole, and produces concrete suggested rewrites for the weakest spots. The judge skill, invoked as /message:judge, takes a message, a file of messages, or a whole site, and works through a fetch, card-writing, scoring, and suggestion-verification pipeline.",
+      "source": "./message"
+    }
+  ]
+}
