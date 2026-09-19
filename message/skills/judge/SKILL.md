@@ -107,6 +107,8 @@ No report file. Reply directly with:
 - Series findings, if the source was a sequence or a site.
 - The path to `findings.json`.
 
+Before reporting a difference between two overall scores, establish the noise floor: score the same message twice, unchanged, and take that spread as the floor. Differences below it are not findings. A one-sentence edit is generally below it, so report "no measurable difference" rather than ranking to four decimals. Note that the `confidence` axis measures how confident the message sounds, not how reliable the measurement is.
+
 ## Rules for suggestions
 
 - Keep the author's voice. Match their register and sentence length; a suggestion that sounds like a different writer is not a fix.
