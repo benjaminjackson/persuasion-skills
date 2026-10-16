@@ -107,7 +107,9 @@ No report file. Reply directly with:
 - Series findings, if the source was a sequence or a site.
 - The path to `findings.json`.
 
-Before reporting a difference between two overall scores, establish the noise floor: score the same message twice, unchanged, and take that spread as the floor. Differences below it are not findings. A one-sentence edit is generally below it, so report "no measurable difference" rather than ranking to four decimals. Note that the `confidence` axis measures how confident the message sounds, not how reliable the measurement is.
+Before reporting a difference between two overall scores, establish the noise floor. For each message you are comparing, rerun steps 3 and 4 on the unchanged text at least twice more, so you have three overall scores per message. Write each new `cards.json` in a fresh `sonnet` subagent that has not seen the earlier cards; if you rewrite the cards yourself, you will tend to copy your first set and the spread will come out too small. Rerunning only step 4 on the same `cards.json` does not measure the variation from writing the cards. The floor is the largest spread between the highest and lowest score of any one message. A difference below the floor is not a finding: report "no measurable difference" rather than ranking to four decimals. A difference above it is a finding, even for a one-sentence edit. For a site with more than 5 pages, measure the floor on 3 pages, not all of them.
+
+Two things in `findings.json` are called confidence. The `confidence` axis measures how confident the message sounds; it says nothing about how reliable the measurement is. The `confidence` field inside a rule's `raw` Jev answer is how sure Jev was of that one answer.
 
 ## Rules for suggestions
 
